@@ -24,12 +24,12 @@ Vagrant.configure("2") do |config|
 
   config.vm.define :CentOS7 do |centos64|
     centos64.vm.box = "bento/centos-7.4"
-    config.cache.enable :yum
+    centos64.cache.enable :yum
   end
 
   config.vm.define :Oracle7 do |oracle64|
     oracle64.vm.box = "bento/oracle-7"
-    config.cache.enable :yum
+    oracle64.cache.enable :yum
   end
 
   config.vm.define :Ubuntu17 do |ubuntu64|
@@ -95,14 +95,14 @@ Vagrant.configure("2") do |config|
 
   config.vm.define :CentOS7_AG do |centosag64|
     centosag64.vm.box = "hisa_x/centos7-ansible"
-    config.cache.enable :yum
+    centosag64.cache.enable :yum
   end
 
   # Ubuntu with Puppet.
 
   config.vm.define :Ubuntu14_Pup do |ubuntupup64|
     ubuntupup64.vm.box = "puppetlabs/ubuntu-14.04-64-puppet"
-    config.cache.enable :apt
+    ubuntupup64.cache.enable :apt
   end
 
 end
