@@ -24,22 +24,22 @@ Vagrant.configure("2") do |config|
 
   config.vm.define :CentOS7 do |centos64|
     centos64.vm.box = "bento/centos-7.4"
-	config.cache.enable :yum
+    config.cache.enable :yum
   end
 
   config.vm.define :Oracle7 do |oracle64|
     oracle64.vm.box = "bento/oracle-7"
-	config.cache.enable :yum
+    config.cache.enable :yum
   end
 
   config.vm.define :Ubuntu17 do |ubuntu64|
     ubuntu64.vm.box = "bento/ubuntu-17.04"
-	 ubuntu64.cache.enable :apt
+    ubuntu64.cache.enable :apt
   end
 
   config.vm.define :Debian9 do |debian64|
     debian64.vm.box = "bento/debian-9"
-	debian64.cache.enable :apt
+    debian64.cache.enable :apt
   end
 
   config.vm.define :openSUSE422 do |opensuse64|
@@ -49,7 +49,7 @@ Vagrant.configure("2") do |config|
 
   config.vm.define :Archlinux do |archlinux64|
     archlinux64.vm.box = "archlinux/archlinux"
-	archlinux64.cache.enable :pacman
+    archlinux64.cache.enable :pacman
   end
 
   #
