@@ -18,7 +18,7 @@ Vagrant.configure("2") do |config|
 
   config.vm.define :Fedora26 do |fedora64|
     fedora64.vm.box = "bento/fedora-26"
-	# Package manager 'dnf' now in use, apply: https://github.com/fgrehm/vagrant-cachier/pull/180/commits/5141e1305a91eb553fc09fdf27161390e5efab5a
+    # Package manager 'dnf' now in use, apply: https://github.com/fgrehm/vagrant-cachier/pull/180/commits/5141e1305a91eb553fc09fdf27161390e5efab5a
     fedora64.cache.enable :dnf
   end
 
