@@ -60,11 +60,11 @@ Vagrant.configure("2") do |config|
     freebsd64.vm.box = "bento/freebsd-11"
   end
 
+  # Dragonfly, OpenBSD and NetBSD - as no VB Guest Additions are present the errors shown following the check can be ignored.
+  
   config.vm.define :Dragonfly46 do |dragonfly64|
     dragonfly64.vm.box = "b00ga/dragonfly46-ufs"
   end
-
-  # OpenBSD and NetBSD - as no VB Guest Additions are present the errors shown following the checks can be ignored.
 
   config.vm.define :OpenBSD56 do |openbsd64|
     openbsd64.vm.box = "tmatilai/openbsd-5.6"
